@@ -44,7 +44,6 @@
 UART_HandleTypeDef huart2;
 
 osThreadId defaultTaskHandle;
-osThreadId task2Handle;
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -54,7 +53,6 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 void StartDefaultTask(void const * argument);
-void Task02_init(void const * argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -118,10 +116,6 @@ int main(void)
   /* definition and creation of defaultTask */
   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
-
-  /* definition and creation of task2 */
-  osThreadDef(task2, Task02_init, osPriorityNormal, 0, 128);
-  task2Handle = osThreadCreate(osThread(task2), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -281,29 +275,9 @@ void StartDefaultTask(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_0);
     osDelay(1);
   }
   /* USER CODE END 5 */
-}
-
-/* USER CODE BEGIN Header_Task02_init */
-/**
-* @brief Function implementing the task2 thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_Task02_init */
-void Task02_init(void const * argument)
-{
-  /* USER CODE BEGIN Task02_init */
-  /* Infinite loop */
-  for(;;)
-  {
-	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_1);
-	osDelay(1);
-  }
-  /* USER CODE END Task02_init */
 }
 
  /**
