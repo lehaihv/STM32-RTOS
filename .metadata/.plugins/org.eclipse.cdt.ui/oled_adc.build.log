@@ -1,0 +1,20 @@
+10:19:36 **** Incremental Build of configuration Debug for project oled_adc ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "oled_adc.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\GitHub\GitHub\STM32-Nucleo-L476RG\oled_adc_GitHub\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="oled_adc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: oled_adc.elf
+ 
+arm-none-eabi-objdump -h -S  oled_adc.elf  > "oled_adc.list"
+arm-none-eabi-objcopy  -O binary  oled_adc.elf  "oled_adc.bin"
+arm-none-eabi-size   oled_adc.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28272	    132	   2948	  31352	   7a78	oled_adc.elf
+Finished building: default.size.stdout
+ 
+Finished building: oled_adc.bin
+ 
+Finished building: oled_adc.list
+ 
+
+10:19:38 Build Finished. 0 errors, 0 warnings. (took 1s.675ms)
+
