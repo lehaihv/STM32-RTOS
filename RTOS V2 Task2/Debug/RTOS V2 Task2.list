@@ -39,9 +39,9 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_line   00012e9c  00000000  00000000  0003f9dd  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000f7be8  00000000  00000000  00052879  2**0
+ 18 .debug_str    000f7be6  00000000  00000000  00052879  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  0014a461  2**0
+ 19 .comment      00000053  00000000  00000000  0014a45f  2**0
                   CONTENTS, READONLY
  20 .debug_frame  00004f18  00000000  00000000  0014a4b4  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -169,8 +169,8 @@ int main(void)
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* creation of Task1c */
-  Task1cHandle = osThreadNew(StartTask1, NULL, &Task1c_attributes);
+  /* creation of Task1 */
+  Task1Handle = osThreadNew(StartTask1, NULL, &Task1_attributes);
  8000234:	4a09      	ldr	r2, [pc, #36]	; (800025c <main+0x3c>)
  8000236:	2100      	movs	r1, #0
  8000238:	4809      	ldr	r0, [pc, #36]	; (8000260 <main+0x40>)
@@ -234,71 +234,71 @@ void SystemClock_Config(void)
  8000292:	60da      	str	r2, [r3, #12]
  8000294:	611a      	str	r2, [r3, #16]
 
+  /** Configure the main internal regulator output voltage
+  */
+  if (HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1) != HAL_OK)
+ 8000296:	f44f 7000 	mov.w	r0, #512	; 0x200
+ 800029a:	f000 fab7 	bl	800080c <HAL_PWREx_ControlVoltageScaling>
+ 800029e:	4603      	mov	r3, r0
+ 80002a0:	2b00      	cmp	r3, #0
+ 80002a2:	d001      	beq.n	80002a8 <SystemClock_Config+0x34>
+  {
+    Error_Handler();
+ 80002a4:	f000 f88a 	bl	80003bc <Error_Handler>
+  }
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_MSI;
- 8000296:	2310      	movs	r3, #16
- 8000298:	617b      	str	r3, [r7, #20]
+ 80002a8:	2310      	movs	r3, #16
+ 80002aa:	617b      	str	r3, [r7, #20]
   RCC_OscInitStruct.MSIState = RCC_MSI_ON;
- 800029a:	2301      	movs	r3, #1
- 800029c:	62fb      	str	r3, [r7, #44]	; 0x2c
+ 80002ac:	2301      	movs	r3, #1
+ 80002ae:	62fb      	str	r3, [r7, #44]	; 0x2c
   RCC_OscInitStruct.MSICalibrationValue = 0;
- 800029e:	2300      	movs	r3, #0
- 80002a0:	633b      	str	r3, [r7, #48]	; 0x30
+ 80002b0:	2300      	movs	r3, #0
+ 80002b2:	633b      	str	r3, [r7, #48]	; 0x30
   RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_6;
- 80002a2:	2360      	movs	r3, #96	; 0x60
- 80002a4:	637b      	str	r3, [r7, #52]	; 0x34
+ 80002b4:	2360      	movs	r3, #96	; 0x60
+ 80002b6:	637b      	str	r3, [r7, #52]	; 0x34
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
- 80002a6:	2300      	movs	r3, #0
- 80002a8:	63fb      	str	r3, [r7, #60]	; 0x3c
+ 80002b8:	2300      	movs	r3, #0
+ 80002ba:	63fb      	str	r3, [r7, #60]	; 0x3c
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
- 80002aa:	f107 0314 	add.w	r3, r7, #20
- 80002ae:	4618      	mov	r0, r3
- 80002b0:	f000 fb02 	bl	80008b8 <HAL_RCC_OscConfig>
- 80002b4:	4603      	mov	r3, r0
- 80002b6:	2b00      	cmp	r3, #0
- 80002b8:	d001      	beq.n	80002be <SystemClock_Config+0x4a>
+ 80002bc:	f107 0314 	add.w	r3, r7, #20
+ 80002c0:	4618      	mov	r0, r3
+ 80002c2:	f000 faf9 	bl	80008b8 <HAL_RCC_OscConfig>
+ 80002c6:	4603      	mov	r3, r0
+ 80002c8:	2b00      	cmp	r3, #0
+ 80002ca:	d001      	beq.n	80002d0 <SystemClock_Config+0x5c>
   {
     Error_Handler();
- 80002ba:	f000 f87f 	bl	80003bc <Error_Handler>
+ 80002cc:	f000 f876 	bl	80003bc <Error_Handler>
   }
   /** Initializes the CPU, AHB and APB buses clocks
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
- 80002be:	230f      	movs	r3, #15
- 80002c0:	603b      	str	r3, [r7, #0]
+ 80002d0:	230f      	movs	r3, #15
+ 80002d2:	603b      	str	r3, [r7, #0]
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_MSI;
- 80002c2:	2300      	movs	r3, #0
- 80002c4:	607b      	str	r3, [r7, #4]
+ 80002d4:	2300      	movs	r3, #0
+ 80002d6:	607b      	str	r3, [r7, #4]
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
- 80002c6:	2300      	movs	r3, #0
- 80002c8:	60bb      	str	r3, [r7, #8]
+ 80002d8:	2300      	movs	r3, #0
+ 80002da:	60bb      	str	r3, [r7, #8]
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
- 80002ca:	2300      	movs	r3, #0
- 80002cc:	60fb      	str	r3, [r7, #12]
+ 80002dc:	2300      	movs	r3, #0
+ 80002de:	60fb      	str	r3, [r7, #12]
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
- 80002ce:	2300      	movs	r3, #0
- 80002d0:	613b      	str	r3, [r7, #16]
+ 80002e0:	2300      	movs	r3, #0
+ 80002e2:	613b      	str	r3, [r7, #16]
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
- 80002d2:	463b      	mov	r3, r7
- 80002d4:	2100      	movs	r1, #0
- 80002d6:	4618      	mov	r0, r3
- 80002d8:	f000 fed4 	bl	8001084 <HAL_RCC_ClockConfig>
- 80002dc:	4603      	mov	r3, r0
- 80002de:	2b00      	cmp	r3, #0
- 80002e0:	d001      	beq.n	80002e6 <SystemClock_Config+0x72>
-  {
-    Error_Handler();
- 80002e2:	f000 f86b 	bl	80003bc <Error_Handler>
-  }
-  /** Configure the main internal regulator output voltage
-  */
-  if (HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1) != HAL_OK)
- 80002e6:	f44f 7000 	mov.w	r0, #512	; 0x200
- 80002ea:	f000 fa8f 	bl	800080c <HAL_PWREx_ControlVoltageScaling>
+ 80002e4:	463b      	mov	r3, r7
+ 80002e6:	2100      	movs	r1, #0
+ 80002e8:	4618      	mov	r0, r3
+ 80002ea:	f000 fecb 	bl	8001084 <HAL_RCC_ClockConfig>
  80002ee:	4603      	mov	r3, r0
  80002f0:	2b00      	cmp	r3, #0
  80002f2:	d001      	beq.n	80002f8 <SystemClock_Config+0x84>
@@ -572,6 +572,7 @@ HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
   HAL_NVIC_EnableIRQ(TIM6_DAC_IRQn);
  8000432:	2036      	movs	r0, #54	; 0x36
  8000434:	f000 f9ce 	bl	80007d4 <HAL_NVIC_EnableIRQ>
+
   /* Enable TIM6 clock */
   __HAL_RCC_TIM6_CLK_ENABLE();
  8000438:	4b1e      	ldr	r3, [pc, #120]	; (80004b4 <HAL_InitTick+0x9c>)
@@ -632,6 +633,7 @@ HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
  800048e:	4b0b      	ldr	r3, [pc, #44]	; (80004bc <HAL_InitTick+0xa4>)
  8000490:	2200      	movs	r2, #0
  8000492:	609a      	str	r2, [r3, #8]
+
   if(HAL_TIM_Base_Init(&htim6) == HAL_OK)
  8000494:	4809      	ldr	r0, [pc, #36]	; (80004bc <HAL_InitTick+0xa4>)
  8000496:	f001 f817 	bl	80014c8 <HAL_TIM_Base_Init>

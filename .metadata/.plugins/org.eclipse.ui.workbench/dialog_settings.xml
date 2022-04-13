@@ -6,16 +6,32 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
+			<item value="org.eclipse.cdt.ui.specific_content_assist.command(org.eclipse.cdt.ui.specific_content_assist.category_id=org.eclipse.cdt.ui.templateProposalCategory)"/>
+			<item value="org.eclipse.tm4e.ui.preferences.ThemePreferencePage"/>
 			<item value="com.st.stm32cube.ide.mcu.debug.swv.core.itmtrace"/>
+			<item value="org.eclipse.ui.preferencePages.Views"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="org.eclipse.ui.commands"/>
+			<item value="org.eclipse.ui.preferences"/>
 			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.ui.preferences"/>
 		</list>
 		<list key="textEntries">
 			<item value="1"/>
+			<item value="1"/>
+			<item value="1"/>
+			<item value="1"/>
 		</list>
 		<list key="textArray">
+			<item value="template proposal"/>
+			<item value="theme"/>
 			<item value="swv"/>
+			<item value="dark"/>
 		</list>
+	</section>
+	<section name="ImportExportAction">
+	</section>
+	<section name="ZipFileExportWizard">
 	</section>
 </section>

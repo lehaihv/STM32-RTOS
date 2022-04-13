@@ -1,10 +1,17 @@
-15:49:11 **** Incremental Build of configuration Debug for project RTOS V2 Task1 ****
+08:58:11 **** Incremental Build of configuration Debug for project RTOS V2 Task1 ****
 make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "RTOS V2 Task1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\GitHub\GitHub\STM32-RTOS\RTOS V2 Task1\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS V2 Task1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RTOS V2 Task1.elf
+ 
 arm-none-eabi-size   RTOS\ V2\ Task1.elf 
+arm-none-eabi-objdump -h -S  RTOS\ V2\ Task1.elf  > "RTOS V2 Task1.list"
    text	   data	    bss	    dec	    hex	filename
-  24912	     24	   8192	  33128	   8168	RTOS V2 Task1.elf
+  46052	    132	   9636	  55820	   da0c	RTOS V2 Task1.elf
 Finished building: default.size.stdout
  
+Finished building: RTOS V2 Task1.list
+ 
 
-15:49:12 Build Finished. 0 errors, 0 warnings. (took 391ms)
+08:58:12 Build Finished. 0 errors, 0 warnings. (took 880ms)
 
