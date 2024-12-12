@@ -54,6 +54,12 @@ default.size.stdout \
 OBJDUMP_LIST += \
 RTOS_E1_CM7.list \
 
+OBJCOPY_HEX += \
+RTOS_E1_CM7.hex \
+
+OBJCOPY_BIN += \
+RTOS_E1_CM7.bin \
+
 
 # All Target
 all: main-build
@@ -63,7 +69,7 @@ main-build: RTOS_E1_CM7.elf secondary-outputs
 
 # Tool invocations
 RTOS_E1_CM7.elf RTOS_E1_CM7.map: $(OBJS) $(USER_OBJS) /Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/CM7/STM32H755ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "RTOS_E1_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/CM7/STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_E1_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "RTOS_E1_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/CM7/STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_E1_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -77,12 +83,22 @@ RTOS_E1_CM7.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+RTOS_E1_CM7.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "RTOS_E1_CM7.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+RTOS_E1_CM7.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "RTOS_E1_CM7.bin"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) RTOS_E1_CM7.elf RTOS_E1_CM7.list RTOS_E1_CM7.map default.size.stdout
+	-$(RM) RTOS_E1_CM7.bin RTOS_E1_CM7.elf RTOS_E1_CM7.hex RTOS_E1_CM7.list RTOS_E1_CM7.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX) $(OBJCOPY_BIN)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

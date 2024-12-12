@@ -150,11 +150,21 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	 ADS1115_readSingleEnded(ADS1115_MUX_AIN0, &voltageRead);
 	 sprintf(msg,"%g\r\n",voltageRead);
 	 HAL_UART_Transmit(COM1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	 SSD1306_GotoXY (40,40); // goto 10, 10
+	 SSD1306_Puts((char *)msg, &Font_11x18, 1);
+
+	 /*SSD1306_Putc ((char)((int)(Temp)/100+48), &Font_11x18, 1);
+	 SSD1306_Putc ((char)(((int)(Temp)%100)/10+48), &Font_11x18, 1);
+	 SSD1306_Puts (".", &Font_11x18, 1);
+	 SSD1306_Putc ((char)((int)(Temp)%10+48), &Font_11x18, 1);*/
+	 SSD1306_UpdateScreen(); // update screen
+	 HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
