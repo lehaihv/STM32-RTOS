@@ -21,6 +21,15 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "ssd1306.h"
+#include "fonts.h"
+//#include "test.h"
+//#include "bitmap.h"
+//#include "horse_anim.h"
+#include "string.h"
+#include "stdio.h"
+//#include <Adafruit_ADS1X15.h>
+#include "ads1115.h"
 
 /* USER CODE END Includes */
 
@@ -46,6 +55,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 I2C_HandleTypeDef hi2c1;
+I2C_HandleTypeDef hi2c2;
 
 /* USER CODE BEGIN PV */
 
@@ -54,6 +64,7 @@ I2C_HandleTypeDef hi2c1;
 /* Private function prototypes -----------------------------------------------*/
 static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
+static void MX_I2C2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -105,7 +116,33 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_I2C1_Init();
+  MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
+  SSD1306_Init (); // initialize the diaply
+  SSD1306_GotoXY (0,0); // goto 10, 10
+  SSD1306_Puts ("CH1: ", &Font_11x18, 1); // print Voltmeter_Back to Intel Nuc
+  SSD1306_UpdateScreen(); // update screen
+  //HAL_Delay(3000);
+  SSD1306_GotoXY (0,20);
+  SSD1306_Puts ("CH2: ", &Font_11x18, 1);
+  SSD1306_GotoXY (0,40);
+  SSD1306_Puts ("Temp: ", &Font_11x18, 1);
+  SSD1306_UpdateScreen(); // update screen
+
+  // ADS1115 Init
+  if(ADS1115_Init(&hi2c2, ADS1115_DATA_RATE_64, ADS1115_PGA_ONE) == HAL_OK)
+  {
+    // Device found.
+    HAL_Delay(1500);
+  }
+  else
+  {
+    // Device cannot found.
+    while(1);
+  }
+
+  float voltageRead = 0;
+  char msg[20];
 
   /* USER CODE END 2 */
 
@@ -113,6 +150,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	 sprintf(msg,"%g\r\n",voltageRead);
+	 HAL_UART_Transmit(COM1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -165,6 +204,54 @@ static void MX_I2C1_Init(void)
   /* USER CODE BEGIN I2C1_Init 2 */
 
   /* USER CODE END I2C1_Init 2 */
+
+}
+
+/**
+  * @brief I2C2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C2_Init(void)
+{
+
+  /* USER CODE BEGIN I2C2_Init 0 */
+
+  /* USER CODE END I2C2_Init 0 */
+
+  /* USER CODE BEGIN I2C2_Init 1 */
+
+  /* USER CODE END I2C2_Init 1 */
+  hi2c2.Instance = I2C2;
+  hi2c2.Init.Timing = 0x00707CBB;
+  hi2c2.Init.OwnAddress1 = 0;
+  hi2c2.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c2.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c2.Init.OwnAddress2 = 0;
+  hi2c2.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c2.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c2.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c2, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c2, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C2_Init 2 */
+
+  /* USER CODE END I2C2_Init 2 */
 
 }
 
