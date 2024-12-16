@@ -27,25 +27,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 0000002e  00000000  00000000  0000a1f4  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00010591  00000000  00000000  0000a222  2**0
+ 12 .debug_info   0001060e  00000000  00000000  0000a222  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00002214  00000000  00000000  0001a7b3  2**0
+ 13 .debug_abbrev 00002229  00000000  00000000  0001a830  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000c28  00000000  00000000  0001c9c8  2**3
+ 14 .debug_aranges 00000c28  00000000  00000000  0001ca60  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 0000093f  00000000  00000000  0001d5f0  2**0
+ 15 .debug_rnglists 0000093f  00000000  00000000  0001d688  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  0003a565  00000000  00000000  0001df2f  2**0
+ 16 .debug_macro  0003a823  00000000  00000000  0001dfc7  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00010590  00000000  00000000  00058494  2**0
+ 17 .debug_line   000105be  00000000  00000000  000587ea  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0017cf9e  00000000  00000000  00068a24  2**0
+ 18 .debug_str    0017dd60  00000000  00000000  00068da8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  001e59c2  2**0
+ 19 .comment      00000043  00000000  00000000  001e6b08  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00004480  00000000  00000000  001e5a08  2**2
+ 20 .debug_frame  00004480  00000000  00000000  001e6b4c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000072  00000000  00000000  001e9e88  2**0
+ 21 .debug_line_str 00000072  00000000  00000000  001eafcc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -3500,7 +3500,7 @@ HAL_StatusTypeDef HAL_EXTI_GetHandle(EXTI_HandleTypeDef *hexti, uint32_t ExtiLin
   * @param  hexti Exti handle.
   * @retval none.
   */
-void HAL_EXTI_IRQHandler(EXTI_HandleTypeDef *hexti)
+void HAL_EXTI_IRQHandler(const EXTI_HandleTypeDef *hexti)
 {
  80018e0:	b580      	push	{r7, lr}
  80018e2:	b086      	sub	sp, #24
@@ -3599,7 +3599,7 @@ void HAL_EXTI_IRQHandler(EXTI_HandleTypeDef *hexti)
   *         the configuration information for the specified GPIO peripheral.
   * @retval None
   */
-void HAL_GPIO_Init(GPIO_TypeDef  *GPIOx, GPIO_InitTypeDef *GPIO_Init)
+void HAL_GPIO_Init(GPIO_TypeDef  *GPIOx, const GPIO_InitTypeDef *GPIO_Init)
 {
  8001958:	b480      	push	{r7}
  800195a:	b089      	sub	sp, #36	@ 0x24
@@ -4159,7 +4159,7 @@ HAL_StatusTypeDef HAL_HSEM_FastTake(uint32_t SemID)
     /*take success when MasterID match and take bit set*/
     return HAL_OK;
   }
-#else  
+#else
   /* Read the RLR register to take the semaphore */
   if (HSEM->RLR[SemID] == (HSEM_CR_COREID_CURRENT | HSEM_RLR_LOCK))
  8001cf4:	4a08      	ldr	r2, [pc, #32]	@ (8001d18 <HAL_HSEM_FastTake+0x2c>)
@@ -4224,8 +4224,8 @@ void  HAL_HSEM_Release(uint32_t SemID, uint32_t ProcessID)
  8001d44:	58026400 	.word	0x58026400
 
 08001d48 <HAL_PWREx_ConfigSupply>:
-  *         PWR_SMPS_2V5_SUPPLIES_EXT are used only for lines that supports SMPS
-  *         regulator.
+  *         process during startup.
+  *         For more details, please refer to the power control chapter in the reference manual
   * @retval HAL status.
   */
 HAL_StatusTypeDef HAL_PWREx_ConfigSupply (uint32_t SupplySource)
@@ -5832,7 +5832,7 @@ __weak HAL_StatusTypeDef HAL_RCC_OscConfig(RCC_OscInitTypeDef  *RCC_OscInitStruc
   *         (for more details refer to section above "Initialization/de-initialization functions")
   * @retval None
   */
-HAL_StatusTypeDef HAL_RCC_ClockConfig(RCC_ClkInitTypeDef  *RCC_ClkInitStruct, uint32_t FLatency)
+HAL_StatusTypeDef HAL_RCC_ClockConfig(const RCC_ClkInitTypeDef  *RCC_ClkInitStruct, uint32_t FLatency)
 {
  80026b0:	b580      	push	{r7, lr}
  80026b2:	b086      	sub	sp, #24

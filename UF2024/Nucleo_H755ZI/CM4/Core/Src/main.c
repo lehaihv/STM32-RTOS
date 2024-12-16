@@ -142,8 +142,8 @@ int main(void)
     while(1);
   }
 
-  float voltageRead = 0;
-  char msg[20];
+  //float voltageRead = 0;
+  char msg[20] = "hello here";
 
   /* USER CODE END 2 */
 
@@ -151,8 +151,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	 ADS1115_readSingleEnded(ADS1115_MUX_AIN0, &voltageRead);
-	 gcvt(voltageRead, 4, msg);
+	 //ADS1115_readSingleEnded(ADS1115_MUX_AIN0, &voltageRead);
+	 //gcvt(voltageRead, 4, msg);
+
 	 // sprintf(msg,"%g\r\n",voltageRead);
 	 HAL_UART_Transmit(COM1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
 
