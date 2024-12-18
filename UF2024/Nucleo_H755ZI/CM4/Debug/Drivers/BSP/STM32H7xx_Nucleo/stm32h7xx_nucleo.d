@@ -1,6 +1,6 @@
 Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.o: \
- /Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.c \
- /Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h \
+ D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.c \
+ D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h \
  ../Core/Inc/stm32h7xx_nucleo_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
@@ -32,8 +32,8 @@ Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.o: \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- /Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h
-/Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h:
+ D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h:
 ../Core/Inc/stm32h7xx_nucleo_conf.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -65,4 +65,4 @@ Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.o: \
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-/Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h:
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h:

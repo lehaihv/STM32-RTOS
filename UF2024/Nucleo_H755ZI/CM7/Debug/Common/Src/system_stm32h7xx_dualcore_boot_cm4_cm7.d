@@ -1,5 +1,5 @@
 Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o: \
- /Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c \
+ D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c \
  ../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
  ../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h755xx.h \
  ../../Drivers/CMSIS/Include/core_cm7.h \

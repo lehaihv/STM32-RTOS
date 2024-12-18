@@ -68,8 +68,8 @@ all: main-build
 main-build: RTOS_E1_CM7.elf secondary-outputs
 
 # Tool invocations
-RTOS_E1_CM7.elf RTOS_E1_CM7.map: $(OBJS) $(USER_OBJS) /Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/CM7/STM32H755ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "RTOS_E1_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/CM7/STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_E1_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+RTOS_E1_CM7.elf RTOS_E1_CM7.map: $(OBJS) $(USER_OBJS) D:\GitHub\STM32-RTOS\UF2024\Nucleo_H755ZI\CM7\STM32H755ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "RTOS_E1_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\GitHub\STM32-RTOS\UF2024\Nucleo_H755ZI\CM7\STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_E1_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
