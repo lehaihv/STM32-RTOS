@@ -1,0 +1,5 @@
+/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/build/Debug/CMakeFiles/UART_V1.dir
+/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/build/Debug/CMakeFiles/edit_cache.dir
+/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/build/Debug/CMakeFiles/rebuild_cache.dir
+/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/build/Debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/build/Debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

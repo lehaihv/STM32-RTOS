@@ -1,5 +1,0 @@
-/Users/macbookpro5530/Documents/STM32_VSCode/L476RGT/CMakeFiles/L476RGT.dir
-/Users/macbookpro5530/Documents/STM32_VSCode/L476RGT/CMakeFiles/edit_cache.dir
-/Users/macbookpro5530/Documents/STM32_VSCode/L476RGT/CMakeFiles/rebuild_cache.dir
-/Users/macbookpro5530/Documents/STM32_VSCode/L476RGT/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
-/Users/macbookpro5530/Documents/STM32_VSCode/L476RGT/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
