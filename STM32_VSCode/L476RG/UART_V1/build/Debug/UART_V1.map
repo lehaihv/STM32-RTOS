@@ -763,7 +763,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
  .debug_macro   0x00000000      0x330 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
  .debug_line    0x00000000      0xc29 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
- .debug_str     0x00000000    0xe1419 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
+ .debug_str     0x00000000    0xe13ee CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
  .comment       0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
  .debug_frame   0x00000000      0x204 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
  .ARM.attributes
@@ -1201,7 +1201,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj
  .debug_macro   0x00000000      0x330 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj
  .debug_line    0x00000000      0xad8 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj
- .debug_str     0x00000000    0xe1141 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj
+ .debug_str     0x00000000    0xe1116 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj
  .comment       0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj
  .debug_frame   0x00000000      0x204 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj
  .ARM.attributes
@@ -1315,7 +1315,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj
  .debug_macro   0x00000000      0x330 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj
  .debug_line    0x00000000      0xd7e CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj
- .debug_str     0x00000000    0xe119f CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj
+ .debug_str     0x00000000    0xe1174 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj
  .comment       0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj
  .debug_frame   0x00000000      0x248 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj
  .ARM.attributes
@@ -1400,7 +1400,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj
  .debug_macro   0x00000000      0x330 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj
  .debug_line    0x00000000      0x752 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj
- .debug_str     0x00000000    0xe0d81 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj
+ .debug_str     0x00000000    0xe0d56 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj
  .comment       0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj
  .debug_frame   0x00000000       0x50 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj
  .ARM.attributes
@@ -1563,7 +1563,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
  .debug_macro   0x00000000      0x330 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
  .debug_line    0x00000000      0x723 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
- .debug_str     0x00000000    0xe0c6c CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
+ .debug_str     0x00000000    0xe0c41 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
  .comment       0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj
@@ -1644,7 +1644,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
  .debug_macro   0x00000000      0x330 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
  .debug_line    0x00000000      0x726 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
- .debug_str     0x00000000    0xe0c6f CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
+ .debug_str     0x00000000    0xe0c44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
  .comment       0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj
@@ -1753,7 +1753,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
  .debug_macro   0x00000000      0x330 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
  .debug_line    0x00000000      0xd28 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
- .debug_str     0x00000000    0xe10ff CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
+ .debug_str     0x00000000    0xe10d4 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
  .comment       0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
  .debug_frame   0x00000000      0x204 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj
  .ARM.attributes
@@ -1835,7 +1835,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj
  .debug_macro   0x00000000      0x330 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj
  .debug_line    0x00000000      0x726 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj
- .debug_str     0x00000000    0xe0c6f CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj
+ .debug_str     0x00000000    0xe0c44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj
  .comment       0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj
@@ -1950,7 +1950,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
  .debug_macro   0x00000000      0x330 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
  .debug_line    0x00000000      0x8fa CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
- .debug_str     0x00000000    0xe1200 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
+ .debug_str     0x00000000    0xe11d5 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
  .comment       0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
  .debug_frame   0x00000000      0x230 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
  .ARM.attributes
@@ -2324,7 +2324,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj
  .debug_macro   0x00000000      0x330 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj
  .debug_line    0x00000000      0xaa3 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj
- .debug_str     0x00000000    0xe0f4e CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj
+ .debug_str     0x00000000    0xe0f23 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj
  .comment       0x00000000       0x44 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj
  .debug_frame   0x00000000      0x174 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj
  .ARM.attributes
@@ -2456,7 +2456,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a CMakeFiles/UART_V1.dir/Core/Src/sysmem.c.obj
  .debug_macro   0x00000000      0x1df CMakeFiles/UART_V1.dir/Core/Src/sysmem.c.obj
  .debug_line    0x00000000      0x2d9 CMakeFiles/UART_V1.dir/Core/Src/sysmem.c.obj
- .debug_str     0x00000000     0x5b77 CMakeFiles/UART_V1.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x00000000     0x5b4c CMakeFiles/UART_V1.dir/Core/Src/sysmem.c.obj
  .comment       0x00000000       0x44 CMakeFiles/UART_V1.dir/Core/Src/sysmem.c.obj
  .debug_frame   0x00000000       0x34 CMakeFiles/UART_V1.dir/Core/Src/sysmem.c.obj
  .ARM.attributes
@@ -2587,7 +2587,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 CMakeFiles/UART_V1.dir/Core/Src/syscalls.c.obj
  .debug_macro   0x00000000       0xce CMakeFiles/UART_V1.dir/Core/Src/syscalls.c.obj
  .debug_line    0x00000000      0x608 CMakeFiles/UART_V1.dir/Core/Src/syscalls.c.obj
- .debug_str     0x00000000     0x9404 CMakeFiles/UART_V1.dir/Core/Src/syscalls.c.obj
+ .debug_str     0x00000000     0x93d9 CMakeFiles/UART_V1.dir/Core/Src/syscalls.c.obj
  .comment       0x00000000       0x44 CMakeFiles/UART_V1.dir/Core/Src/syscalls.c.obj
  .debug_frame   0x00000000      0x2ac CMakeFiles/UART_V1.dir/Core/Src/syscalls.c.obj
  .ARM.attributes
@@ -3339,32 +3339,32 @@ LOAD /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_line    0x0000a7c3       0x7a CMakeFiles/UART_V1.dir/startup_stm32l476xx.s.obj
  .debug_line    0x0000a83d       0x4f /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-strlen.o)
 
-.debug_str      0x00000000    0xe6c03
- .debug_str     0x00000000    0xe3eb3 CMakeFiles/UART_V1.dir/Core/Src/main.c.obj
-                              0xe41b8 (size before relaxing)
- .debug_str     0x000e3eb3      0x114 CMakeFiles/UART_V1.dir/Core/Src/stm32l4xx_it.c.obj
-                              0xe0e2d (size before relaxing)
- .debug_str     0x000e3fc7      0x325 CMakeFiles/UART_V1.dir/Core/Src/stm32l4xx_hal_msp.c.obj
-                              0xe16cb (size before relaxing)
- .debug_str     0x000e42ec      0x9a5 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
-                              0xe1bed (size before relaxing)
- .debug_str     0x000e4c91      0xb4a CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                              0xe1a94 (size before relaxing)
- .debug_str     0x000e57db      0x417 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                              0xe14db (size before relaxing)
- .debug_str     0x000e5bf2      0x451 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
-                              0xe1654 (size before relaxing)
- .debug_str     0x000e6043      0x114 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
-                              0xe100e (size before relaxing)
- .debug_str     0x000e6157      0x4fc CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
-                              0xe13f0 (size before relaxing)
- .debug_str     0x000e6653      0x3c7 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                              0xe170e (size before relaxing)
- .debug_str     0x000e6a1a       0x8b CMakeFiles/UART_V1.dir/Core/Src/system_stm32l4xx.c.obj
-                              0xe0e95 (size before relaxing)
- .debug_str     0x000e6aa5       0x80 CMakeFiles/UART_V1.dir/startup_stm32l476xx.s.obj
+.debug_str      0x00000000    0xe6bd8
+ .debug_str     0x00000000    0xe3e88 CMakeFiles/UART_V1.dir/Core/Src/main.c.obj
+                              0xe418d (size before relaxing)
+ .debug_str     0x000e3e88      0x114 CMakeFiles/UART_V1.dir/Core/Src/stm32l4xx_it.c.obj
+                              0xe0e02 (size before relaxing)
+ .debug_str     0x000e3f9c      0x325 CMakeFiles/UART_V1.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+                              0xe16a0 (size before relaxing)
+ .debug_str     0x000e42c1      0x9a5 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                              0xe1bc2 (size before relaxing)
+ .debug_str     0x000e4c66      0xb4a CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                              0xe1a69 (size before relaxing)
+ .debug_str     0x000e57b0      0x417 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                              0xe14b0 (size before relaxing)
+ .debug_str     0x000e5bc7      0x451 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                              0xe1629 (size before relaxing)
+ .debug_str     0x000e6018      0x114 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+                              0xe0fe3 (size before relaxing)
+ .debug_str     0x000e612c      0x4fc CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+                              0xe13c5 (size before relaxing)
+ .debug_str     0x000e6628      0x3c7 CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                              0xe16e3 (size before relaxing)
+ .debug_str     0x000e69ef       0x8b CMakeFiles/UART_V1.dir/Core/Src/system_stm32l4xx.c.obj
+                              0xe0e6a (size before relaxing)
+ .debug_str     0x000e6a7a       0x80 CMakeFiles/UART_V1.dir/startup_stm32l476xx.s.obj
                                  0xda (size before relaxing)
- .debug_str     0x000e6b25       0xde /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-strlen.o)
+ .debug_str     0x000e6afa       0xde /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-strlen.o)
                                  0xf3 (size before relaxing)
 
 .debug_line_str
