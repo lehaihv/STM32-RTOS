@@ -1,0 +1,13 @@
+# Target labels
+ App_1_CM7
+# Source files and their labels
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CMakeFiles/App_1_CM7
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CMakeFiles/App_1_CM7.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CMakeFiles/App_1_CM7-complete.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM7/src/App_1_CM7-stamp/App_1_CM7-build.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM7/src/App_1_CM7-stamp/App_1_CM7-configure.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM7/src/App_1_CM7-stamp/App_1_CM7-download.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM7/src/App_1_CM7-stamp/App_1_CM7-install.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM7/src/App_1_CM7-stamp/App_1_CM7-mkdir.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM7/src/App_1_CM7-stamp/App_1_CM7-patch.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM7/src/App_1_CM7-stamp/App_1_CM7-update.rule

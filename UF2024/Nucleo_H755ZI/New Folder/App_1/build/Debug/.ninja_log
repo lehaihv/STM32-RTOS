@@ -1,0 +1,37 @@
+# ninja log v5
+2	62	7585825205563350	CM4/src/App_1_CM4-stamp/App_1_CM4-mkdir	92809b359377e831
+2	62	7585825205563350	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM4/src/App_1_CM4-stamp/App_1_CM4-mkdir	92809b359377e831
+9	68	7585825205576941	CM7/src/App_1_CM7-stamp/App_1_CM7-mkdir	3049084e71d11f17
+9	68	7585825205576941	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-mkdir	3049084e71d11f17
+62	120	7585825206144302	CM4/src/App_1_CM4-stamp/App_1_CM4-download	daf7303bc905442d
+62	120	7585825206144302	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM4/src/App_1_CM4-stamp/App_1_CM4-download	daf7303bc905442d
+68	127	7585825206204290	CM7/src/App_1_CM7-stamp/App_1_CM7-download	f388f89322fd0d67
+68	127	7585825206204290	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-download	f388f89322fd0d67
+120	176	7585825206693028	CM4/src/App_1_CM4-stamp/App_1_CM4-update	40248fdc17481f3a
+120	176	7585825206693028	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM4/src/App_1_CM4-stamp/App_1_CM4-update	40248fdc17481f3a
+131	186	7585825206803027	CM7/src/App_1_CM7-stamp/App_1_CM7-update	5959dad5f530e7cd
+131	186	7585825206803027	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-update	5959dad5f530e7cd
+176	231	7585825207249184	CM4/src/App_1_CM4-stamp/App_1_CM4-patch	3d9c6518be5dff4f
+176	231	7585825207249184	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM4/src/App_1_CM4-stamp/App_1_CM4-patch	3d9c6518be5dff4f
+186	242	7585825207349371	CM7/src/App_1_CM7-stamp/App_1_CM7-patch	3bb41b89a08c6d20
+186	242	7585825207349371	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-patch	3bb41b89a08c6d20
+242	1534	7585825220205063	CM7/src/App_1_CM7-stamp/App_1_CM7-configure	5abcdefe3fe7691c
+242	1534	7585825220205063	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-configure	5abcdefe3fe7691c
+231	1543	7585825220205063	CM4/src/App_1_CM4-stamp/App_1_CM4-configure	e0b2f81c48a2cc7a
+231	1543	7585825220205063	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM4/src/App_1_CM4-stamp/App_1_CM4-configure	e0b2f81c48a2cc7a
+1543	6723	7585825272084722	CM4/src/App_1_CM4-stamp/App_1_CM4-build	9e25f3b9bee370d1
+1543	6723	7585825272084722	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM4/src/App_1_CM4-stamp/App_1_CM4-build	9e25f3b9bee370d1
+1534	6775	7585825272686711	CM7/src/App_1_CM7-stamp/App_1_CM7-build	9db5760e74b144aa
+1534	6775	7585825272686711	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-build	9db5760e74b144aa
+6723	6796	7585825272859818	CM4/src/App_1_CM4-stamp/App_1_CM4-install	9e0bd293baee3469
+6723	6796	7585825272859818	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM4/src/App_1_CM4-stamp/App_1_CM4-install	9e0bd293baee3469
+6775	6834	7585825273263870	CM7/src/App_1_CM7-stamp/App_1_CM7-install	e5654e1ac5eddd8e
+6775	6834	7585825273263870	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-install	e5654e1ac5eddd8e
+6796	6869	7585825273586506	CMakeFiles/App_1_CM4-complete	de910e821760a2e2
+6796	6869	7585825273586506	CM4/src/App_1_CM4-stamp/App_1_CM4-done	de910e821760a2e2
+6796	6869	7585825273586506	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CMakeFiles/App_1_CM4-complete	de910e821760a2e2
+6796	6869	7585825273586506	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM4/src/App_1_CM4-stamp/App_1_CM4-done	de910e821760a2e2
+6834	6905	7585825273929647	CMakeFiles/App_1_CM7-complete	f37fdea3fc23dfa3
+6834	6905	7585825273929647	CM7/src/App_1_CM7-stamp/App_1_CM7-done	f37fdea3fc23dfa3
+6834	6905	7585825273929647	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CMakeFiles/App_1_CM7-complete	f37fdea3fc23dfa3
+6834	6905	7585825273929647	D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-done	f37fdea3fc23dfa3

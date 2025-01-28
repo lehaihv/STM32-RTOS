@@ -1,0 +1,13 @@
+# Target labels
+ App_1_CM4
+# Source files and their labels
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CMakeFiles/App_1_CM4
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CMakeFiles/App_1_CM4.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CMakeFiles/App_1_CM4-complete.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM4/src/App_1_CM4-stamp/App_1_CM4-build.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM4/src/App_1_CM4-stamp/App_1_CM4-configure.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM4/src/App_1_CM4-stamp/App_1_CM4-download.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM4/src/App_1_CM4-stamp/App_1_CM4-install.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM4/src/App_1_CM4-stamp/App_1_CM4-mkdir.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM4/src/App_1_CM4-stamp/App_1_CM4-patch.rule
+D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/CM4/src/App_1_CM4-stamp/App_1_CM4-update.rule

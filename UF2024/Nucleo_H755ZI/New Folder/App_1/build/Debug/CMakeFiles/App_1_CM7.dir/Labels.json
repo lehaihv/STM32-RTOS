@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CMakeFiles/App_1_CM7"
+		},
+		{
+			"file" : "D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CMakeFiles/App_1_CM7.rule"
+		},
+		{
+			"file" : "D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CMakeFiles/App_1_CM7-complete.rule"
+		},
+		{
+			"file" : "D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-build.rule"
+		},
+		{
+			"file" : "D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-configure.rule"
+		},
+		{
+			"file" : "D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-download.rule"
+		},
+		{
+			"file" : "D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-install.rule"
+		},
+		{
+			"file" : "D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-mkdir.rule"
+		},
+		{
+			"file" : "D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-patch.rule"
+		},
+		{
+			"file" : "D:/GitHub/STM32-RTOS/UF2024/Nucleo_H755ZI/New Folder/App_1/build/Debug/CM7/src/App_1_CM7-stamp/App_1_CM7-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"App_1_CM7"
+		],
+		"name" : "App_1_CM7"
+	}
+}
