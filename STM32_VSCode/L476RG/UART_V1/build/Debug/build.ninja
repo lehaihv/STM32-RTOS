@@ -57,6 +57,14 @@ build CMakeFiles/UART_V1.dir/Core/Src/main.c.obj: C_COMPILER__UART_V1_unscanned_
   OBJECT_DIR = CMakeFiles/UART_V1.dir
   OBJECT_FILE_DIR = CMakeFiles/UART_V1.dir/Core/Src
 
+build CMakeFiles/UART_V1.dir/Core/Src/bmp280.c.obj: C_COMPILER__UART_V1_unscanned_Debug /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/Core/Src/bmp280.c || cmake_object_order_depends_target_UART_V1
+  DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/UART_V1.dir/Core/Src/bmp280.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
+  INCLUDES = -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Core/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/UART_V1.dir
+  OBJECT_FILE_DIR = CMakeFiles/UART_V1.dir/Core/Src
+
 build CMakeFiles/UART_V1.dir/Core/Src/stm32l4xx_it.c.obj: C_COMPILER__UART_V1_unscanned_Debug /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/Core/Src/stm32l4xx_it.c || cmake_object_order_depends_target_UART_V1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/UART_V1.dir/Core/Src/stm32l4xx_it.c.obj.d
@@ -73,17 +81,17 @@ build CMakeFiles/UART_V1.dir/Core/Src/stm32l4xx_hal_msp.c.obj: C_COMPILER__UART_
   OBJECT_DIR = CMakeFiles/UART_V1.dir
   OBJECT_FILE_DIR = CMakeFiles/UART_V1.dir/Core/Src
 
-build CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj: C_COMPILER__UART_V1_unscanned_Debug /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c || cmake_object_order_depends_target_UART_V1
+build CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj: C_COMPILER__UART_V1_unscanned_Debug /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c || cmake_object_order_depends_target_UART_V1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj.d
+  DEP_FILE = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
   INCLUDES = -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Core/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles/UART_V1.dir
   OBJECT_FILE_DIR = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src
 
-build CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj: C_COMPILER__UART_V1_unscanned_Debug /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c || cmake_object_order_depends_target_UART_V1
+build CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj: C_COMPILER__UART_V1_unscanned_Debug /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c || cmake_object_order_depends_target_UART_V1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj.d
+  DEP_FILE = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
   INCLUDES = -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Core/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles/UART_V1.dir
@@ -145,22 +153,6 @@ build CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio
   OBJECT_DIR = CMakeFiles/UART_V1.dir
   OBJECT_FILE_DIR = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src
 
-build CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj: C_COMPILER__UART_V1_unscanned_Debug /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c || cmake_object_order_depends_target_UART_V1
-  DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Core/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/UART_V1.dir
-  OBJECT_FILE_DIR = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src
-
-build CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj: C_COMPILER__UART_V1_unscanned_Debug /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c || cmake_object_order_depends_target_UART_V1
-  DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Core/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/UART_V1.dir
-  OBJECT_FILE_DIR = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src
-
 build CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj: C_COMPILER__UART_V1_unscanned_Debug /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c || cmake_object_order_depends_target_UART_V1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj.d
@@ -209,6 +201,22 @@ build CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti
   OBJECT_DIR = CMakeFiles/UART_V1.dir
   OBJECT_FILE_DIR = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src
 
+build CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj: C_COMPILER__UART_V1_unscanned_Debug /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c || cmake_object_order_depends_target_UART_V1
+  DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
+  INCLUDES = -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Core/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/UART_V1.dir
+  OBJECT_FILE_DIR = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src
+
+build CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj: C_COMPILER__UART_V1_unscanned_Debug /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c || cmake_object_order_depends_target_UART_V1
+  DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
+  INCLUDES = -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Core/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/UART_V1.dir
+  OBJECT_FILE_DIR = CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src
+
 build CMakeFiles/UART_V1.dir/Core/Src/system_stm32l4xx.c.obj: C_COMPILER__UART_V1_unscanned_Debug /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/STM32_VSCode/L476RG/UART_V1/Core/Src/system_stm32l4xx.c || cmake_object_order_depends_target_UART_V1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/UART_V1.dir/Core/Src/system_stm32l4xx.c.obj.d
@@ -249,7 +257,7 @@ build CMakeFiles/UART_V1.dir/startup_stm32l476xx.s.obj: ASM_COMPILER__UART_V1_un
 #############################################
 # Link the executable UART_V1.elf
 
-build UART_V1.elf: C_EXECUTABLE_LINKER__UART_V1_Debug CMakeFiles/UART_V1.dir/Core/Src/main.c.obj CMakeFiles/UART_V1.dir/Core/Src/stm32l4xx_it.c.obj CMakeFiles/UART_V1.dir/Core/Src/stm32l4xx_hal_msp.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj CMakeFiles/UART_V1.dir/Core/Src/system_stm32l4xx.c.obj CMakeFiles/UART_V1.dir/Core/Src/sysmem.c.obj CMakeFiles/UART_V1.dir/Core/Src/syscalls.c.obj CMakeFiles/UART_V1.dir/startup_stm32l476xx.s.obj
+build UART_V1.elf: C_EXECUTABLE_LINKER__UART_V1_Debug CMakeFiles/UART_V1.dir/Core/Src/main.c.obj CMakeFiles/UART_V1.dir/Core/Src/bmp280.c.obj CMakeFiles/UART_V1.dir/Core/Src/stm32l4xx_it.c.obj CMakeFiles/UART_V1.dir/Core/Src/stm32l4xx_hal_msp.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj CMakeFiles/UART_V1.dir/Core/Src/system_stm32l4xx.c.obj CMakeFiles/UART_V1.dir/Core/Src/sysmem.c.obj CMakeFiles/UART_V1.dir/Core/Src/syscalls.c.obj CMakeFiles/UART_V1.dir/startup_stm32l476xx.s.obj
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g
   OBJECT_DIR = CMakeFiles/UART_V1.dir
   POST_BUILD = :

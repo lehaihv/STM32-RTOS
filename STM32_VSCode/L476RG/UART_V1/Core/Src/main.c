@@ -18,10 +18,12 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include <string.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <string.h>
+#include <stdio.h>
+#include "bmp280.h"
 
 /* USER CODE END Includes */
 
@@ -42,11 +44,21 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c1;
+
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 char msg[] = "Hello\n\r";
 char recei_txt[uart_buffer_max];
+BMP280_HandleTypedef bmp280;
+
+float pressure, temperature, humidity;
+
+uint16_t size;
+uint8_t Data[256];
+uint8_t str[256];
+
 
 /* USER CODE END PV */
 
@@ -54,6 +66,7 @@ char recei_txt[uart_buffer_max];
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -93,22 +106,63 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
+  bmp280_init_default_params(&bmp280.params);
+	bmp280.addr = BMP280_I2C_ADDRESS_0;
+	bmp280.i2c = &hi2c1;
 
+	while (!bmp280_init(&bmp280, &bmp280.params)) {
+		size = sprintf((char *)Data, "BMP280 initialization failed\n");
+		HAL_UART_Transmit(&huart2, Data, size, 1000);
+		HAL_Delay(2000);
+	}
+	bool bme280p = bmp280.id == BME280_CHIP_ID;
+	size = sprintf((char *)Data, "BMP280: found %s\n", bme280p ? "BME280" : "BMP280");
+	HAL_UART_Transmit(&huart2, Data, size, 1000);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY); // (uint8_t*)
-    HAL_Delay(1000); 
+    //HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY); // (uint8_t*)
+    //HAL_Delay(1000); 
     //HAL_UART_Receive(&huart2, (uint8_t*)recei_txt, uart_buffer_max, 5000);
     //HAL_UART_Transmit(&huart2, (uint8_t*)recei_txt, strlen(recei_txt), HAL_MAX_DELAY);
+    //float a =1.99;
+    //uint8_t str;
+    //sprintf(str,"%f",a);
+    float flt = 100.55;
+    uint8_t str[32];
+    printf((char *)str,'%f',flt);
+    //SendBuffer(sprintf(str,'%f',flt), (void *)str);
+    HAL_UART_Transmit(&huart2, str, 32, HAL_MAX_DELAY);
     HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); // LD2_Pin
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    HAL_Delay(100);
+		while (!bmp280_read_float(&bmp280, &temperature, &pressure, &humidity)) {
+			size = sprintf((char *)Data,
+					"Temperature/pressure reading failed\n");
+			HAL_UART_Transmit(&huart2, Data, size, 1000);
+			HAL_Delay(2000);
+		}
+
+		size = sprintf((char *)Data,"Pressure: %.2f Pa, Temperature: %.2f C", pressure, temperature);
+		HAL_UART_Transmit(&huart2, Data, size, 1000);
+    //HAL_UART_Transmit(&huart2, (uint8_t*)Data, 5, HAL_MAX_DELAY); ///
+		if (bme280p) {
+			size = sprintf((char *)Data,", Humidity: %.2f\n", humidity);
+			HAL_UART_Transmit(&huart2, Data, size, 1000);
+		}
+
+		else {
+			size = sprintf((char *)Data, "\n");
+			HAL_UART_Transmit(&huart2, Data, size, 1000);
+		}
+		HAL_Delay(2000);
   }
   /* USER CODE END 3 */
 }
@@ -160,6 +214,54 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C1_Init(void)
+{
+
+  /* USER CODE BEGIN I2C1_Init 0 */
+
+  /* USER CODE END I2C1_Init 0 */
+
+  /* USER CODE BEGIN I2C1_Init 1 */
+
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.Timing = 0x10D19CE4;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c1, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c1, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
+
 }
 
 /**
