@@ -130,15 +130,12 @@ int main(void)
     //HAL_Delay(1000); 
     //HAL_UART_Receive(&huart2, (uint8_t*)recei_txt, uart_buffer_max, 5000);
     //HAL_UART_Transmit(&huart2, (uint8_t*)recei_txt, strlen(recei_txt), HAL_MAX_DELAY);
-    //float a =1.99;
-    //uint8_t str;
-    //sprintf(str,"%f",a);
-    float flt = 100.55;
-    uint8_t str[32];
-    printf((char *)str,'%f',flt);
-    //SendBuffer(sprintf(str,'%f',flt), (void *)str);
-    HAL_UART_Transmit(&huart2, str, 32, HAL_MAX_DELAY);
-    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); // LD2_Pin
+    /* float a = 136.89;
+    //int b = (int)a;
+    uint8_t str[30];
+    size = sprintf((char *)str,"%f\n\r",a);
+    HAL_UART_Transmit(&huart2, str, size, HAL_MAX_DELAY);
+    HAL_Delay(1000); */
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -150,16 +147,15 @@ int main(void)
 			HAL_Delay(2000);
 		}
 
-		size = sprintf((char *)Data,"Pressure: %.2f Pa, Temperature: %.2f C", pressure, temperature);
-		HAL_UART_Transmit(&huart2, Data, size, 1000);
-    //HAL_UART_Transmit(&huart2, (uint8_t*)Data, 5, HAL_MAX_DELAY); ///
+		size = sprintf((char *)Data,"Pressure: %f Pa, Temperature: %f C", pressure , temperature);
+		HAL_UART_Transmit(&huart2, Data, size, 1000); 
 		if (bme280p) {
-			size = sprintf((char *)Data,", Humidity: %.2f\n", humidity);
+			size = sprintf((char *)Data,", Humidity: %f\n\r", humidity);
 			HAL_UART_Transmit(&huart2, Data, size, 1000);
 		}
 
 		else {
-			size = sprintf((char *)Data, "\n");
+			size = sprintf((char *)Data, "\n\r");
 			HAL_UART_Transmit(&huart2, Data, size, 1000);
 		}
 		HAL_Delay(2000);
