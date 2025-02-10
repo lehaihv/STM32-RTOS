@@ -26,7 +26,9 @@
 #include "bmp280.h"
 #include "ssd1306.h"
 #include "ssd1306_tests.h"
+#include "ssd1306_fonts.h"
 #include <stdbool.h>
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -161,6 +163,11 @@ int main(void)
 		size = sprintf((char *)Data, "\n\r");
 		HAL_UART_Transmit(&huart2, Data, size, 1000);
 	}
+	// OLED display
+	ssd1306_SetCursor(0,0);
+	ssd1306_WriteString((char*)Data, Font_6x8, White);
+	ssd1306_UpdateScreen();
+	//
 	HAL_Delay(2000);
   }
   /* USER CODE END 3 */
