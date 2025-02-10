@@ -27,7 +27,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
- ../Core/Inc/bmp280.h
+ ../Core/Inc/bmp280.h \
+ /Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306.h \
+ /Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306_conf.h \
+ /Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306_tests.h
 ../Core/Inc/main.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../Core/Inc/stm32l4xx_hal_conf.h:
@@ -58,3 +61,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h:
 ../Core/Inc/bmp280.h:
+/Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306.h:
+/Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306_conf.h:
+/Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306_tests.h:
