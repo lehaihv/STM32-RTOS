@@ -12,12 +12,13 @@ uint8_t AS7341_Init(void) {
 
     // check device id from WHOAMI
     uint8_t regData;
-    status = AS7341_ReadRegister(AS7341_WHOAMI,&regData);
+    status = AS7341_ReadRegister(AS7341_WHOAMI, &regData);
     errNum += (status != HAL_OK);
 
     if (regData != AS7341_CHIP_ID) {
-        return 255;
-    }   
+        errNum = 255; //return 255;
+    }
+    return errNum;
 }
 
 // Low level functions

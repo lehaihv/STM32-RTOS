@@ -13,6 +13,7 @@ RM := rm -rf
 -include Drivers/STM32L4xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
+-include AS7341/Scr/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -67,8 +68,8 @@ all: main-build
 main-build: BMP280.elf secondary-outputs
 
 # Tool invocations
-BMP280.elf BMP280.map: $(OBJS) $(USER_OBJS) /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "BMP280.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BMP280.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+BMP280.elf BMP280.map: $(OBJS) $(USER_OBJS) /Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "BMP280.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BMP280.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -28,6 +28,7 @@
 #include "ssd1306_tests.h"
 #include "ssd1306_fonts.h"
 #include <stdbool.h>
+#include "as7341.h"
 
 /* USER CODE END Includes */
 
@@ -116,6 +117,15 @@ int main(void)
   /*OLED SSD1309*/
   ssd1306_Init();
   //ssd1306_TestAll();
+
+  /*AS7341 sensor*/
+  //AS7341_Init();
+  if (AS7341_Init() == 0) {
+	  HAL_UART_Transmit(&huart2, "Found AS7341!", size, 1000);
+  }
+  else {
+	  HAL_UART_Transmit(&huart2, "No AS7341 found!", size, 1000);
+  }
 
   /*BMP280*/
   bmp280_init_default_params(&bmp280.params);
