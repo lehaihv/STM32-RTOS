@@ -61,7 +61,7 @@ float pressure, temperature, humidity;
 
 uint16_t size;
 uint8_t Data[256];
-uint8_t str[256];
+uint8_t Data_OLED[15];
 
 /* USER CODE END PV */
 
@@ -115,7 +115,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   /*OLED SSD1309*/
   ssd1306_Init();
-  ssd1306_TestAll();
+  //ssd1306_TestAll();
 
   /*BMP280*/
   bmp280_init_default_params(&bmp280.params);
@@ -164,8 +164,13 @@ int main(void)
 		HAL_UART_Transmit(&huart2, Data, size, 1000);
 	}
 	// OLED display
-	ssd1306_SetCursor(0,0);
-	ssd1306_WriteString((char*)Data, Font_6x8, White);
+	ssd1306_SetCursor(5,5);
+	sprintf((char *)Data_OLED,"Pres: %.2f Pa", pressure);
+	ssd1306_WriteString(Data_OLED, Font_6x8, White);
+	ssd1306_SetCursor(5,20);
+	sprintf((char *)Data_OLED,"Temp: %.2f Pa", temperature);
+	ssd1306_WriteString(Data_OLED, Font_6x8, White);
+
 	ssd1306_UpdateScreen();
 	//
 	HAL_Delay(2000);
