@@ -120,12 +120,14 @@ int main(void)
 
   /*AS7341 sensor*/
   //AS7341_Init();
-  if (AS7341_Init() == 0) {
-	  HAL_UART_Transmit(&huart2, "Found AS7341!", size, 1000);
+  while (AS7341_Init()) {
+	  size = sprintf((char *)Data, "No AS7341 found\n\r");
+	  HAL_UART_Transmit(&huart2, Data, size, 1000);
+	  HAL_Delay(2000);
   }
-  else {
-	  HAL_UART_Transmit(&huart2, "No AS7341 found!", size, 1000);
-  }
+  size = sprintf((char *)Data, "Found AS7341\n\r");
+  HAL_UART_Transmit(&huart2, Data, size, 1000);
+  AS7341_Setup();
 
   /*BMP280*/
   bmp280_init_default_params(&bmp280.params);
@@ -133,7 +135,7 @@ int main(void)
   bmp280.i2c = &hi2c1;
 
   while (!bmp280_init(&bmp280, &bmp280.params)) {
-  	size = sprintf((char *)Data, "BMP280 initialization failed\n");
+  	size = sprintf((char *)Data, "BMP280 initialization failed\n\r");
   	HAL_UART_Transmit(&huart2, Data, size, 1000);
   	HAL_Delay(2000);
   }

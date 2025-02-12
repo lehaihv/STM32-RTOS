@@ -24,7 +24,7 @@
 //#define SSD1306_USE_SPI
 
 // I2C Configuration
-#define AS7341_I2C_PORT        hi2c2
+#define AS7341_I2C_PORT        hi2c1
 #define AS7341_I2C_ADDR        (0x39 << 1)
 
 

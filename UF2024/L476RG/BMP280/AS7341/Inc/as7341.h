@@ -70,7 +70,7 @@ extern I2C_HandleTypeDef AS7341_I2C_PORT;
 #endif
 
 ////////////////////////////
-#define AS7341_CHIP_ID 0x09         ///< AS7341 default device id from WHOAMI
+#define AS7341_CHIP_ID 0x24         ///< AS7341 default device id from WHOAMI
 
 #define AS7341_WHOAMI 0x92 ///< Chip ID register
 
@@ -266,6 +266,7 @@ typedef enum {
 /////////////////////////
 // Procedure definitions
 uint8_t AS7341_Init(void);
+void AS7341_Setup(void);
 
 
 // Low level functions

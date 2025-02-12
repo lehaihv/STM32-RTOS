@@ -1,6 +1,6 @@
 AS7341/Scr/as7341.o: ../AS7341/Scr/as7341.c \
- /Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/AS7341/Inc/as7341.h \
- /Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/AS7341/Inc/as7341_conf.h \
+ /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/AS7341/Inc/as7341.h \
+ /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/AS7341/Inc/as7341_conf.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
  ../Core/Inc/stm32l4xx_hal_conf.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h \
@@ -29,8 +29,8 @@ AS7341/Scr/as7341.o: ../AS7341/Scr/as7341.c \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
-/Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/AS7341/Inc/as7341.h:
-/Users/mac7740/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/AS7341/Inc/as7341_conf.h:
+/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/AS7341/Inc/as7341.h:
+/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/AS7341/Inc/as7341_conf.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../Core/Inc/stm32l4xx_hal_conf.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h:

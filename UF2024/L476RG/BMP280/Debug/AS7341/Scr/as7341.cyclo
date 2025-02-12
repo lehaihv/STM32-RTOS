@@ -1,4 +1,5 @@
 ../AS7341/Scr/as7341.c:8:9:AS7341_Init	2
-../AS7341/Scr/as7341.c:26:19:AS7341_WriteRegister	1
-../AS7341/Scr/as7341.c:31:19:AS7341_ReadRegister	1
-../AS7341/Scr/as7341.c:36:19:AS7341_ReadRegisters	1
+../AS7341/Scr/as7341.c:25:6:AS7341_Setup	1
+../AS7341/Scr/as7341.c:56:19:AS7341_WriteRegister	1
+../AS7341/Scr/as7341.c:61:19:AS7341_ReadRegister	1
+../AS7341/Scr/as7341.c:66:19:AS7341_ReadRegisters	1
