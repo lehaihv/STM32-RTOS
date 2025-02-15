@@ -1,6 +1,6 @@
 # ninja log v5
-5	430	1739153707401534773	CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj	fa38da294794f97a
 467	983	1739153707960464491	CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj	73256728e9656f4f
+5	430	1739153707401534773	CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj	fa38da294794f97a
 470	853	1739153707829263445	CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj	3a7e213cbbb19892
 3	466	1739153707442691622	CMakeFiles/UART_V1.dir/Core/Src/bmp280.c.obj	37343cb8c7ebdfee
 13	379	1739153707354155640	CMakeFiles/UART_V1.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj	840efa8d66899f9f
