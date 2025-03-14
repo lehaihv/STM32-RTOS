@@ -1,7 +1,7 @@
 OLED/Scr/ssd1306_fonts.o: ../OLED/Scr/ssd1306_fonts.c \
- /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306_fonts.h \
- /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306.h \
- /Users/macbookpro5530/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306_conf.h \
+ /home/sonny/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306_fonts.h \
+ /home/sonny/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306.h \
+ /home/sonny/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306_conf.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
  ../Core/Inc/stm32l4xx_hal_conf.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h \
@@ -30,9 +30,9 @@ OLED/Scr/ssd1306_fonts.o: ../OLED/Scr/ssd1306_fonts.c \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
-/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306_fonts.h:
-/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306.h:
-/Users/macbookpro5530/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306_conf.h:
+/home/sonny/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306_fonts.h:
+/home/sonny/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306.h:
+/home/sonny/Documents/GitHub/STM32-RTOS/UF2024/L476RG/BMP280/OLED/Inc/ssd1306_conf.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../Core/Inc/stm32l4xx_hal_conf.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h:
