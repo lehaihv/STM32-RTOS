@@ -1,0 +1,14 @@
+../Drivers/CMSIS/Include/core_cm4.h:2059:26:ITM_SendChar	16	static,ignoring_inline_asm
+../Core/Src/main.c:83:6:send_task1	40	static
+../Core/Src/main.c:89:6:send_task2	40	static
+../Core/Src/main.c:95:6:send_task3	40	static
+../Core/Src/main.c:101:5:_write	32	static
+../Core/Src/main.c:114:5:main	8	static
+../Core/Src/main.c:200:6:SystemClock_Config	96	static
+../Core/Src/main.c:250:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:285:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:330:6:StartTask1	16	static
+../Core/Src/main.c:349:6:StartTask2	16	static
+../Core/Src/main.c:361:6:StartTask3	16	static
+../Core/Src/main.c:380:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:398:6:Error_Handler	4	static,ignoring_inline_asm
