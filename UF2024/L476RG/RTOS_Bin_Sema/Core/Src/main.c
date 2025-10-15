@@ -327,8 +327,11 @@ void StartHighTask(void *argument)
 	/* Infinite loop */
 	for(;;)
 	{
-		printf("Enter high task\n");
-		printf("Leaving high task\n");
+		printf("Enter high task and acquire semaphore\n");
+		osSemaphoreAcquire(bin_semHandle, osWaitForever);
+
+		printf("Leaving high task and release semaphore\n");
+		//osSemaphoreRelease(bin_semHandle);
 		osDelay(500);
 	}
 	/* USER CODE END 5 */
