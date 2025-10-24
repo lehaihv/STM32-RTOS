@@ -1,0 +1,84 @@
+SWV ITM Data Console - ITM Port: 0
+Valve found at 0x42
+Resetting valve...
+Moving to port 1...
+Buffer: CC 
+Buffer: CC CC 
+Buffer: CC CC 42 
+Buffer: CC CC 42 00 
+Buffer: CC CC 42 00 01 
+Buffer: CC CC 42 00 01 00 
+Buffer: CC CC 42 00 01 00 DD 
+Valve channel: 1
+Valve reports port 1
+Moving to port 2...
+Buffer: EC 
+Buffer: EC CC 
+Buffer: EC CC 42 
+Buffer: EC CC 42 00 
+Buffer: EC CC 42 00 01 
+Buffer: EC CC 42 00 01 00 
+Buffer: EC CC 42 00 01 00 DD 
+Valve channel: 1
+Valve reports port 1
+Moving to port 3...
+Buffer: EC 
+Buffer: EC CC 
+Buffer: EC CC 42 
+Buffer: EC CC 42 00 
+Buffer: EC CC 42 00 01 
+Buffer: EC CC 42 00 01 00 
+Buffer: EC CC 42 00 01 00 DD 
+Valve channel: 1
+Valve reports port 1
+Moving to port 4...
+Buffer: EC 
+Buffer: EC CC 
+Buffer: EC CC 42 
+Buffer: EC CC 42 00 
+Buffer: EC CC 42 00 01 
+Buffer: EC CC 42 00 01 00 
+Buffer: EC CC 42 00 01 00 DD 
+Valve channel: 1
+Valve reports port 1
+Moving to port 5...
+Buffer: EC 
+Buffer: EC CC 
+Buffer: EC CC 42 
+Buffer: EC CC 42 00 
+Buffer: EC CC 42 00 01 
+Buffer: EC CC 42 00 01 00 
+Buffer: EC CC 42 00 01 00 DD 
+Valve channel: 1
+Valve reports port 1
+Moving to port 6...
+Buffer: EC 
+Buffer: EC CC 
+Buffer: EC CC 42 
+Buffer: EC CC 42 00 
+Buffer: EC CC 42 00 01 
+Buffer: EC CC 42 00 01 00 
+Buffer: EC CC 42 00 01 00 DD 
+Valve channel: 1
+Valve reports port 1
+Moving to port 7...
+Buffer: EC 
+Buffer: EC CC 
+Buffer: EC CC 42 
+Buffer: EC CC 42 00 
+Buffer: EC CC 42 00 01 
+Buffer: EC CC 42 00 01 00 
+Buffer: EC CC 42 00 01 00 DD 
+Valve channel: 1
+Valve reports port 1
+Moving to port 8...
+Buffer: EC 
+Buffer: EC CC 
+Buffer: EC CC 42 
+Buffer: EC CC 42 00 
+Buffer: EC CC 42 00 01 
+Buffer: EC CC 42 00 01 00 
+Buffer: EC CC 42 00 01 00 DD 
+Valve channel: 1
+Valve reports port 1
+Moving to port 9...
